@@ -15,6 +15,8 @@ int SPEED = 0; // tốc độ
 int start = 0; // 
 int gv = 0; // game over bằng 1 sẽ dừng game
 int level = 0; // level người chơi level càng cao tốc độ càng nhanh
+int score_left = 0; // số điểm còn lại
+int gw = 0; // game win = 1 chuyển level
 
 //Game Score
 int score = 0;
@@ -35,7 +37,6 @@ int lrIndex2 = 25; //Bot 2 OX
 int car2 = 70; //bot 2 OY
 
 
-
 //For Display TEXT
 const int font1 = (int)GLUT_BITMAP_TIMES_ROMAN_24;
 const int font2 = (int)GLUT_BITMAP_HELVETICA_18;
@@ -43,7 +44,6 @@ const int font3 = (int)GLUT_BITMAP_8_BY_13;
 
 
 //hàm viết font chữ trên Windown
-
 void renderBitmapString(float x, float y, void* font, const char* string) {
 	const char* c;
 	glRasterPos2f(x, y);
@@ -51,6 +51,7 @@ void renderBitmapString(float x, float y, void* font, const char* string) {
 		glutBitmapCharacter(font, *c);
 	}
 }
+
 //lấy milli giây
 int getMilliSecondCount() {
 	timeb tb;
@@ -58,7 +59,7 @@ int getMilliSecondCount() {
 	int nCount = tb.millitm + (tb.time & 0xfffff) * 1000;
 	return nCount;
 }
- 
+ //hàm cho chương trình ngủ
 void sleep(int sleepTime) {
 	int count = 0;
 	int beginSleep = getMilliSecondCount();
@@ -67,11 +68,12 @@ void sleep(int sleepTime) {
 	}
 }
 
-
+// hàm khởi tạo
 void init(void) {
 	glClearColor(0.0, 0.0, 0.0, 0.0); // clear black
 }
 
+//hàm bắt đâu game
 void startGame() {
 	//road
 	glColor3f(0.414, 0.412, 0.412); // màu xám
@@ -150,19 +152,31 @@ void startGame() {
 	sprintf_s(buffer1, "SPEED:%dKm/h", SPEED + 40);
 	glColor3f(0.000, 1.000, 0.000);
 	renderBitmapString(80.5, 95 - 2, (void*)font3, buffer1);
+	//print score left
+	char scoreLeft_buffer[50];
+	sprintf_s(scoreLeft_buffer, "SCr left: %d", score_left +25 - score);
+	glColor3f(0.000, 1.000, 0.000);
+	renderBitmapString(80.5, 95 - 4, (void*)font3, scoreLeft_buffer);
+
+	// check game win 
+	if ((score_left + 25) - score <= 0) {
+		//quay về màn hình bắt đầu , chuyển level cho người chơi
+		gw = 1; 
+		start = 0;
+	}
 	//level Print
-	if (score % 50 == 0) {
+	/*if (score % 50 == 0) {
 		int last = score / 50;
 		if (last != level) {
 			level = score / 50;
 			FPS = FPS - 2;
 
 		}
-	}
+	}*/
 	char level_buffer[50];
 	sprintf_s(level_buffer, "LEVEL: %d", level);
 	glColor3f(0.000, 1.000, 0.000);
-	renderBitmapString(80.5, 95 - 4, (void*)font3, level_buffer);
+	renderBitmapString(80.5, 95 - 6, (void*)font3, level_buffer);
 	//MAIN car
 	  //Bánh xe trước
 	//lrIndex là số khai báo trước, ban đầu là 0
@@ -227,7 +241,6 @@ void startGame() {
 		lrIndex1 = botCarPosX[rand() % 5]; // random vị trí mới của bot
 	}
 	//check kill bot car1 
-	std::cout << car1 <<"\n";
 	if ((abs(lrIndex - lrIndex1) < 8) && (car1 + 100 < 10)) { // nếu OX player - OX bot1 < 8px và OY bot1 + OY player thì thua
 		start = 0; // trả về trạng thái xuất phát
 		gv = 1; // hiện bảng game over
@@ -269,6 +282,7 @@ void startGame() {
 	}
 
 }
+//hàm cập nhật
 void update() {
 	int beginFrame = getMilliSecondCount();
 	glutPostRedisplay(); // thông báo cho chương trình vẽ lại
@@ -279,8 +293,8 @@ void update() {
 	}
 
 }
+// Hàm giao diện khi vào game
 void firstDesign() {
-	//Road backgrond
 	//Road Backgound
 	glColor3f(0.000, 0.392, 0.000);
 	glBegin(GL_POLYGON);
@@ -414,6 +428,14 @@ void firstDesign() {
 		sprintf_s(buffer2, "Your Score is : %d", score);
 		renderBitmapString(33, 60 - 4 + 10, (void*)font1, buffer2);
 	}
+	if (gw == 1) { // trong trạng thái game over
+		glColor3f(0.125, 0.176, 0.92);
+		renderBitmapString(40, 60 + 10, (void*)font1, "YOU WIN");
+		glColor3f(0.125, 0.176, 0.92);
+		char buffer2[50];
+		sprintf_s(buffer2, "PRESS ENTER TO NEXT LEVEL");
+		renderBitmapString(15, 60 - 4 + 10, (void*)font1, buffer2);
+	}
 	glColor3f(1.000, 1.000, 0.000);
 	renderBitmapString(30, 80, (void*)font1, " 2D Car Race ");
 
@@ -428,10 +450,12 @@ void firstDesign() {
 	renderBitmapString(30, 50 - 12 + 10, (void*)font3, "Press LEFT to turn Left");
 
 }
+/*Hàm vẽ */
 void display(void) {
 	glClear(GL_COLOR_BUFFER_BIT); // clear all in buffer
 	if (start == 1) {
-		glClearColor(0.000, 0.392, 0.000, 1);
+		/* chọn màu để xóa nền (tức là sẽ phủ nền bằng màu này) */
+		glClearColor(0.000, 0.392, 0.000, 1); // màu xanh
 		startGame();
 	}
 		
@@ -444,7 +468,7 @@ void display(void) {
 	glutSwapBuffers();// hoán đổi vị trí 2 buffer optional
 
 }
-
+/* các thao tác cần làm khi cửa sổ bị thay đổi kích thước */
 void reshape(int w, int h) {
 	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
 	glMatrixMode(GL_PROJECTION);
@@ -452,26 +476,51 @@ void reshape(int w, int h) {
 	glOrtho(0, 100, 0, 100, -1, 1); // góc nhìn
 	glMatrixMode(GL_MODELVIEW);
 }
-void processKeys(unsigned char key, int x, int y) {
 
+//hàm bắt sự kiện bắt đầu game
+void processKeys(unsigned char key, int x, int y) {
 	switch (key)
 	{
 	case ' ': // chọn dấu cách sẽ khởi khởi động game 
 		if (start == 0) {// phòng khi người chơi bấm space khi đang chơi game
-			start = 1;
-			gv = 0;
-			FPS = 40;
-			roadDivTop = 0;
-			roadDivMdl = 0;
-			roadDivBtm = 0;
-			lrIndex = 0;
-			car1 = 0;
-			lrIndex1 = 0;
-			car2 = +35;
-			lrIndex2 = 0;
-			score = 0;
-			level = 0;
-			SPEED = 0;
+			if (gw == 1) { // khi người chơi thắng thì sẽ tăng level +1 và tăng số điểm yêu cầu lên 25
+				start = 1;
+				gv = 0;
+				FPS --;
+				roadDivTop = 0;
+				roadDivMdl = 0;
+				roadDivBtm = 0;
+				lrIndex = 0;
+				car1 = 0;
+				lrIndex1 = 0;
+				car2 = +35;
+				lrIndex2 = 0;
+				score = 0;
+				level +=1;
+				SPEED =0;
+				score_left += 25; 
+				gw = 0; 
+			}
+			else // khi người chơi thua thì sẽ reset lại toàn bộ giá trị
+			{
+				start = 1;
+				gv = 0;
+				FPS = 40;
+				roadDivTop = 0;
+				roadDivMdl = 0;
+				roadDivBtm = 0;
+				lrIndex = 0;
+				car1 = 0;
+				lrIndex1 = 0;
+				car2 = +35;
+				lrIndex2 = 0;
+				score = 0;
+				level = 0;
+				SPEED = 0;
+				score_left=0; 
+				gw = 0; 
+			}
+		
 		}
 		break;
 
@@ -482,6 +531,7 @@ void processKeys(unsigned char key, int x, int y) {
 		break;
 	}
 }
+
 //sự kiện cho bàn phím di chuyển
 void spec_key(int key, int x, int y) {
 	switch (key)
@@ -504,7 +554,7 @@ void spec_key(int key, int x, int y) {
 		break;
 	case GLUT_KEY_LEFT:
 		if (lrIndex >= 0) {
-			lrIndex = lrIndex - (FPS / 10);
+			lrIndex = lrIndex - (FPS / 10); // giảm  OX xe player 
 			if (lrIndex < 0) {
 				lrIndex = -1;
 			}
@@ -515,19 +565,19 @@ void spec_key(int key, int x, int y) {
 		break;
 	}
 }
+
 int main(int argc, char** argv) {
 	glutInit(&argc, argv); // Khởi tọa glut
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);// Khởi tạo chế độ single buffer, hệ màu RGBA
-	glutInitWindowSize(500, 650);
-	glutInitWindowPosition(200, 20);
-	glutCreateWindow("Car Game");
-	init();
-
-	glutDisplayFunc(display);
-	glutReshapeFunc(reshape);
-	glutSpecialFunc(spec_key);
-	glutKeyboardFunc(processKeys);
-	glutIdleFunc(update);
-	glutMainLoop();
+	glutInitWindowSize(500, 650); // kích thước màn hình hiển thị
+	glutInitWindowPosition(200, 20); // vị trí màn hình hiển thị
+	glutCreateWindow("Car Game"); // tên màn hình
+	init(); // hàm khởi tạo
+	glutDisplayFunc(display); // đăng ký sự kiện cho hàm vẽ là hàm display
+	glutReshapeFunc(reshape); /* đăng ký hàm reshape cho sự kiện cửa sổ bịthay đổi kích thước */
+	glutSpecialFunc(spec_key); // đăng ký sự kiện bàn phím mũi tên special key
+	glutKeyboardFunc(processKeys); // đăng ký sự kiện bàn phím
+	glutIdleFunc(update); // thông báo khi chương trình đang trong trạng thái nghỉ thì thực hiện hàm update
+	glutMainLoop(); /* bắt đầu chu trình lặp thể hiện vẽ */
 	return 0;
 }
