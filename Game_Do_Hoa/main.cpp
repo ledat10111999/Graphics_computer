@@ -436,8 +436,6 @@ void firstDesign() {
 		sprintf_s(buffer2, "PRESS ENTER TO NEXT LEVEL");
 		renderBitmapString(15, 60 - 4 + 10, (void*)font1, buffer2);
 	}
-	glColor3f(1.000, 1.000, 0.000);
-	renderBitmapString(30, 80, (void*)font1, " 2D Car Race ");
 
 	glColor3f(0.000, 1.000, 0.000);
 	renderBitmapString(30, 50 + 10, (void*)font2, "Press SPACE to START");
