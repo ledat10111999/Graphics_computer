@@ -1,98 +1,99 @@
 ﻿  main.cpp
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(79,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(107,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(108,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(81,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(109,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(110,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(121,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(122,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(111,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(112,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(123,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(124,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(134,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(135,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(125,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(126,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(136,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(137,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(185,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(186,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(138,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(139,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(187,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(188,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(194,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(195,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(189,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(190,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(196,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(197,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(200,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(202,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(203,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(204,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(198,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(199,26): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(202,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(204,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(205,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(206,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(206,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(207,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(213,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(213,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(214,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(214,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(208,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(209,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(215,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(215,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(216,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(216,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(221,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(221,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(222,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(222,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(223,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(217,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(217,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(218,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(218,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(223,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(223,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(224,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(224,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(224,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(229,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(229,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(230,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(230,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(231,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(225,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(225,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(226,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(226,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(231,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(231,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(232,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(232,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(233,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(233,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(233,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(252,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(252,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(253,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(253,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(234,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(234,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(235,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(235,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(254,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(254,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(255,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(255,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(259,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(259,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(260,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(260,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(261,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(256,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(256,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(257,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(257,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(261,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(261,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(262,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(262,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(262,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(264,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(266,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(266,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(267,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(267,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(268,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(263,43): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(263,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(264,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(264,27): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(266,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(268,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(268,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(269,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(269,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(270,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(270,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(270,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(299,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(303,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(325,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(329,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(335,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(343,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(351,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(359,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(369,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(376,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(385,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(432,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(271,39): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(271,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(272,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(272,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(294,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(301,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(305,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(327,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(331,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(337,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(345,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(353,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(361,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(371,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(378,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(387,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(434,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(436,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(458,38): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
 C:\Users\Admin\source\repos\Game_Do_Hoa\Game_Do_Hoa\main.cpp(463,39): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
   Game_Do_Hoa.vcxproj -> C:\Users\Admin\source\repos\Game_Do_Hoa\Debug\Game_Do_Hoa.exe

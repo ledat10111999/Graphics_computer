@@ -9,7 +9,7 @@
 
 //Game Speed
 int FPS = 40; // khung hình
-int SPEED = 0; // tốc độ
+float SPEED = 0; // tốc độ
 
 //Game Track
 int start = 0; // 
@@ -71,6 +71,7 @@ void sleep(int sleepTime) {
 // hàm khởi tạo
 void init(void) {
 	glClearColor(0.0, 0.0, 0.0, 0.0); // clear black
+
 }
 
 //hàm bắt đâu game
@@ -149,7 +150,7 @@ void startGame() {
 	renderBitmapString(80.5, 95, (void*)font3, buffer);
 	//Speed Print
 	char buffer1[50];
-	sprintf_s(buffer1, "SPEED:%dKm/h", SPEED + 40);
+	sprintf_s(buffer1, "SPEED:%dKm/h", (int)SPEED + 40);
 	glColor3f(0.000, 1.000, 0.000);
 	renderBitmapString(80.5, 95 - 2, (void*)font3, buffer1);
 	//print score left
@@ -241,7 +242,7 @@ void startGame() {
 		lrIndex1 = botCarPosX[rand() % 5]; // random vị trí mới của bot
 	}
 	//check kill bot car1 
-	if ((abs(lrIndex - lrIndex1) < 8) && (car1 + 100 < 10)) { // nếu OX player - OX bot1 < 8px và OY bot1 + OY player thì thua
+	if ((abs(lrIndex - lrIndex1) < 8) && (car1 + 100 < 10)) { // nếu OX player - OX bot1 < 8px và OY bot1 trùng với OY player thì thua
 		start = 0; // trả về trạng thái xuất phát
 		gv = 1; // hiện bảng game over
 
@@ -428,12 +429,12 @@ void firstDesign() {
 		sprintf_s(buffer2, "Your Score is : %d", score);
 		renderBitmapString(33, 60 - 4 + 10, (void*)font1, buffer2);
 	}
-	if (gw == 1) { // trong trạng thái game over
+	if (gw == 1) { // trong trạng thái game Win
 		glColor3f(0.125, 0.176, 0.92);
 		renderBitmapString(40, 60 + 10, (void*)font1, "YOU WIN");
 		glColor3f(0.125, 0.176, 0.92);
 		char buffer2[50];
-		sprintf_s(buffer2, "PRESS ENTER TO NEXT LEVEL");
+		sprintf_s(buffer2, "PRESS SPACE TO NEXT LEVEL");
 		renderBitmapString(15, 60 - 4 + 10, (void*)font1, buffer2);
 	}
 
@@ -481,7 +482,7 @@ void processKeys(unsigned char key, int x, int y) {
 	{
 	case ' ': // chọn dấu cách sẽ khởi khởi động game 
 		if (start == 0) {// phòng khi người chơi bấm space khi đang chơi game
-			if (gw == 1) { // khi người chơi thắng thì sẽ tăng level +1 và tăng số điểm yêu cầu lên 25
+			if (gw == 1) { // khi người chơi thắng thì sẽ tăng level +1 và tăng số điểm yêu cầu tăng thêm  25
 				start = 1;
 				gv = 0;
 				FPS --;
@@ -572,7 +573,7 @@ int main(int argc, char** argv) {
 	glutCreateWindow("Car Game"); // tên màn hình
 	init(); // hàm khởi tạo
 	glutDisplayFunc(display); // đăng ký sự kiện cho hàm vẽ là hàm display
-	glutReshapeFunc(reshape); /* đăng ký hàm reshape cho sự kiện cửa sổ bịthay đổi kích thước */
+	glutReshapeFunc(reshape); /* đăng ký hàm reshape cho sự kiện cửa sổ bị thay đổi kích thước */
 	glutSpecialFunc(spec_key); // đăng ký sự kiện bàn phím mũi tên special key
 	glutKeyboardFunc(processKeys); // đăng ký sự kiện bàn phím
 	glutIdleFunc(update); // thông báo khi chương trình đang trong trạng thái nghỉ thì thực hiện hàm update
